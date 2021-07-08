@@ -1,0 +1,9 @@
+com\test\phone\num\validation\common\logger\InternationalPhoneNumberValidationLogger.class
+com\test\phone\num\validation\common\handler\ApplicationHandler.class
+com\test\phone\num\validation\common\database\configuartion\dialect\SQLiteDialect.class
+com\test\phone\num\validation\common\defines\DataBaseDefines$Customer.class
+com\test\phone\num\validation\common\defines\UIDefines$CustomerDetailsPage.class
+com\test\phone\num\validation\common\defines\constant\Country.class
+com\test\phone\num\validation\common\defines\DataBaseDefines.class
+com\test\phone\num\validation\common\defines\DataBaseDefines$PhoneNumberCode.class
+com\test\phone\num\validation\common\defines\UIDefines.class

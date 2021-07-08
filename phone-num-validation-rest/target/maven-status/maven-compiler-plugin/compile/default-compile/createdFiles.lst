@@ -1,0 +1,12 @@
+com\test\phone\num\validation\rest\database\facade\CustomerFacade.class
+com\test\phone\num\validation\rest\handler\InternationalPhoneNumberHandler.class
+com\test\phone\num\validation\rest\mapper\CustomerMapper.class
+com\test\phone\num\validation\rest\filter\InterationalPhoneNumbersFilter.class
+com\test\phone\num\validation\rest\Main.class
+com\test\phone\num\validation\rest\interceptor\InternationalPhoneNumbersValidationInterceptor.class
+com\test\phone\num\validation\rest\database\service\CustomerService.class
+com\test\phone\num\validation\rest\database\Repository\CustomerRepository.class
+com\test\phone\num\validation\rest\controller\CustomerController.class
+com\test\phone\num\validation\rest\dto\CustomerDto.class
+com\test\phone\num\validation\rest\interceptor\InternationalPhoneNumbersValidationInterceptorConfig.class
+com\test\phone\num\validation\rest\entity\Customer.class

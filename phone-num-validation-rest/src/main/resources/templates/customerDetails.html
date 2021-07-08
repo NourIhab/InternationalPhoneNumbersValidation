@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://thymeleaf.org">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" th:src="@{/js/customer.js}"></script>
+        <script type="text/javascript" th:src="@{/js/country.js}"></script>
+        <link th:href="@{/styles/page.css}" rel="stylesheet"/>
+        <link th:href="@{/styles/pagination.css}" rel="stylesheet"/>
+        <script type="text/javascript"  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+
+    </head>
+    <script>
+
+        /* Initialization of datatable */
+        $(document).ready(function () {
+            $('#tableID').DataTable({});
+        });
+    </script>
+    <body>
+        <div>
+            <h1 align="center">
+                International Phone Numbers Validation </h1>
+        </div>
+        <div id="dropdown">
+            <label>
+                Country
+            </label>
+            <select  id="country" onchange = "ShowHideDiv()">
+                <option th:each="country : ${countryList}" th:value="${country}" th:text="${country}"></option>                  
+            </select>
+        </div>
+        <div id="numbers" style="display:block" >
+            <table id="tableID" class="display" style="width:100%">
+
+                <thead>
+                    <tr>
+                        <th th:text="${id}"></th>
+                        <th th:text="${name}"></th>
+                        <th th:text="${phone}"></th>
+                        <th th:text="${country}"></th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="customerList : ${customerList}">
+
+                        <td th:text="${customerList.customerId}"></td>
+                        <td th:text="${customerList.customerName}"></td>
+                        <td th:text="${customerList.customerPhone}"></td>
+                        <td th:text="${customerList.country}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cameroon" style="display:none">
+            <table id="cameroon_table" align="center">
+                <tr class="header">
+                    <th th:text="${id}"></th>
+                    <th th:text="${name}"></th>
+                    <th th:text="${phone}"></th>
+                    <th th:text="${country}"></th>
+                </tr>
+                <tr th:each="cameron : ${customerCameroonPhoneList}">
+                    <td th:text="${cameron.customerId}"></td>
+                    <td th:text="${cameron.customerName}"></td>
+                    <td th:text="${cameron.customerPhone}"></td>
+                    <td th:text="${cameron.country}"></td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <div id="ethiopia" style="display:none">
+            <table id="ethiopia_table" align="center">
+                <tr class="header">
+                    <th th:text="${id}"></th>
+                    <th th:text="${name}"></th>
+                    <th th:text="${phone}"></th>
+                    <th th:text="${country}"></th>
+                </tr>
+                <tr th:each="ethiopia : ${customerEthiopiaPhoneList}">
+                    <td th:text="${ethiopia.customerId}"></td>
+                    <td th:text="${ethiopia.customerName}"></td>
+                    <td th:text="${ethiopia.customerPhone}"></td>
+                    <td th:text="${ethiopia.country}"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="morocco" style="display:none">
+            <table id="morocco_table" align="center">
+                <tr class="header">
+                    <th th:text="${id}"></th>
+                    <th th:text="${name}"></th>
+                    <th th:text="${phone}"></th>
+                    <th th:text="${country}"></th>
+                </tr>
+                <tr th:each="morocco : ${customerMoroccoPhoneList}">
+                    <td th:text="${morocco.customerId}"></td>
+                    <td th:text="${morocco.customerName}"></td>
+                    <td th:text="${morocco.customerPhone}"></td>
+                    <td th:text="${morocco.country}"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="mozambique" style="display:none">
+            <table id="mozambique_table" align="center">
+                <tr class="header">
+                    <th th:text="${id}"></th>
+                    <th th:text="${name}"></th>
+                    <th th:text="${phone}"></th>
+                    <th th:text="${country}"></th>
+                </tr>
+                <tr th:each="mozambique  : ${customerMozambiquePhoneList}">
+                    <td th:text="${mozambique.customerId}"></td>
+                    <td th:text="${mozambique.customerName}"></td>
+                    <td th:text="${mozambique.customerPhone}"></td>
+                    <td th:text="${mozambique.country}"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="uganda" style="display:none">
+            <table id="uganda_table" align="center">
+                <tr class="header">
+                    <th th:text="${id}"></th>
+                    <th th:text="${name}"></th>
+                    <th th:text="${phone}"></th>
+                    <th th:text="${country}"></th>
+                </tr>
+                <tr th:each="uganda : ${customerUgandaPhoneList}">
+                    <td th:text="${uganda.customerId}"></td>
+                    <td th:text="${uganda.customerName}"></td>
+                    <td th:text="${uganda.customerPhone}"></td>
+                    <td th:text="${uganda.country}"></td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+
+</html>
