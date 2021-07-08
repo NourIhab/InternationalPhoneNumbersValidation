@@ -1,5 +1,15 @@
 # InternationalPhoneNumbersValidation
 
+Spring boot web application used to validate international Phone numbers.
+
+Used:
+ 1- object orentined programming(Encapsulation, Abstraction, interface).
+ 2- spring boot.
+ 3- Thymleaf.
+ 4- MVc
+ 5- maven.
+
+
 • Build the Project form the parent(phone-num-validation) 
 mvn clean package
 
