@@ -3,14 +3,7 @@
 Spring boot web application used to validate international Phone numbers.
 
 Used:
- 1- object orentined programming(Encapsulation, Abstraction, interface).
- 2- spring boot.
- 3- Thymleaf.
- 4- MVc
- 5- maven.
- 6- Jpa
- 7-Hibernate.
- 8-Junit
+ object orentined programming(Encapsulation, Abstraction, interface), spring boot, Thymleaf, MVc, maven ,Jpa, Hibernate, Junit, css, javasccript, html.
  
 
 
