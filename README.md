@@ -8,6 +8,10 @@ Used:
  3- Thymleaf.
  4- MVc
  5- maven.
+ 6- Jpa
+ 7-Hibernate.
+ 8-Junit
+ 
 
 
 • Build the Project form the parent(phone-num-validation) 
